@@ -1,8 +1,10 @@
-Instituto Superior T�cnico, Universidade de Lisboa
+Instituto Superior T�cnico, Universidade de Lisboa
 
 **Network and Computer Security**
 
 # Lab guide: ...
+Função para gerar colisões:
+https://github.com/nneonneo/sha1collider
 
 ## Goals
 
