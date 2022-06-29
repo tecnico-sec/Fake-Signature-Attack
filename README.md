@@ -14,7 +14,7 @@ Since 2005, due to cryptanalysis, different attack reports on SHA-1 have been re
 In 2017, the CWI (Centrum Wiskund & Informatica) and Google annouced an attack where they generated two different PDF files with the same SHA-1 hash, which is the attack we are studying here.
 The attack performed was an identical-prefix collision attack, where a given prefix P is extended with two distinct near-collision block pairs such that they collide for any suffix S:
 
-<img src="theory.png" alt="theory" width="315"/>n
+<img src="theory.png" alt="theory" width="1000"/>
 
 You can find the prefix and the two near-collision block pairs and how were they chosen and calculated in this article: https://shattered.io/static/shattered.pdf
 
