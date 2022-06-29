@@ -4,10 +4,13 @@ Instituto Superior Técnico, Universidade de Lisboa
 
 # Lab guide: ...
 ## Goals
-The goal of this repository is to learn how to execute a collision attack on hash algorithm sha-1. You will learn how to use an Open-Source Python function on your local machine, you will also analyse the function step-by-step. We will use the function of the following public repository: 
+The goal of this repository is to learn how to execute a collision attack on hash algorithm sha-1. You will learn how to use an Open-Source Python function on your local machine and also analyse the function step-by-step. We will use the function of the following public repository: 
 https://github.com/nneonneo/sha1collider.
 
 ## Introduction
+The Secure Hash Algorithm 1 (SHA-1) was released in 1995 by NIST. This hash function, SHA-1 takes an arbitrary size input and generate a fixed-size value of 160 bits. As every hash function, SHA-1 have some common properties, it must generate very different output values for similar inputs, 
+the function is an one-way function, which means that given an output, it must be impossible to get the respective input, and the function has to be resistant to collisions, it must be computationally infeasible to find two inputs that give the same output. 
+
 
 ## Setup
 Before starting this assignment you will need a few steps to be able to execute the attack:
@@ -48,13 +51,26 @@ $ sudo apt-get -y install cjpeg:
 ```
 
 You are now able to execute the attack:
+Calculate the Sha1 hash code for the both files in the directory:
+ ```bash
+$ sha1sum eve.pdf
+$ sha1sum eve1B.pdf
+```
+
+Compare the two hashes.
+
 Execute the following command:
 ```bash
 $ python3 collide.py eve.pdf eve1B.pdf
-```
+``` 
 
 Note that two new pdfs were generated, out-eve.pdf and out-eve1B.pdf.
-Calculate the Sha1 hash code to both files.
+If some output file is corrupted try the following command:
+```bash
+$ python3 collide.py eve.pdf eve1B.pdf --progressive
+``` 
+
+Calculate the Sha1 hash code for both output files.
 
 ```bash
 $ sha1sum out-eve.pdf
