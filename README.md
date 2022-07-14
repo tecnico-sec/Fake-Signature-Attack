@@ -4,7 +4,7 @@ Instituto Superior Técnico, Universidade de Lisboa
 
 # Lab guide:
 ## Goals
-The goal of this repository is to learn how to execute a collision attack on hash algorithm sha-1. You will learn how to use an Open-Source Python function on your local machine and also analyse the function step-by-step. We will use the function of the following public repository: 
+The goal of this repository is to learn how to execute a collision attack on hash algorithm sha-1. You will learn how to use an Open-Source Python function on your local machine to perform the attack. We will use the function of the following public repository: 
 https://github.com/nneonneo/sha1collider.
 
 ## Introduction
