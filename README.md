@@ -19,7 +19,7 @@ The attack performed was an identical-prefix collision attack. We have a given p
 
 You can find the prefix and the two near-collision block pairs and how were they chosen and calculated in this article: https://shattered.io/static/shattered.pdf
 
-This attacks benefits from the structure of the jpeg images in pdf files.
+This attack benefits from the structure of the jpeg images in pdf files.
 
 The prefix is identical but the secret behind this attack is when the jpeg images would initialize there will be a jpeg header that will define the jpeg comment length where that collision block would be added defining the start and end points of the comments fields for each file. This meant that while both files have the "data" for both PDFs embedded in their files, each renders a different image, depending on which image their JPEG comment length hides, as shown in Figure 1 below.
 For the first pdf the comment length was 0x173 and the second comment length was 0x17f so a visual desynchronization was created by the comments having different length so in the second case the first bytes will be ignored because they are commented. Although the pdf data include both images renderization by commenting one there will be only one that will be displayed that will be the second one.
