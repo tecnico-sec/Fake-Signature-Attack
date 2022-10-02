@@ -110,8 +110,7 @@ $ sha1sum out-eve.pdf
 $ sha1sum out-eve1B.pdf
 ```
 
-Compare the two hashes:
-
-<!-- They are the same -->
+Compare the two hashes.
+They are the same!
 
 ----
