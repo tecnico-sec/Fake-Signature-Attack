@@ -2,7 +2,7 @@ Instituto Superior Técnico, Universidade de Lisboa
 
 **Network and Computer Security**
 
-# Lab guide
+# Lab guide: Fake Signature Attack
 
 ## Goals
 
